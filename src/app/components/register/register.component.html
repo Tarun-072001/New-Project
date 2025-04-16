@@ -1,0 +1,34 @@
+<div class="register-container">
+  <div class="register-box">
+    <h2>Register</h2>
+
+    <input type="text" placeholder="Full Name" [(ngModel)]="user.fullName" />
+    <input type="text" placeholder="Father's Name" [(ngModel)]="user.fatherName" />
+    <input type="text" placeholder="Mother's Name" [(ngModel)]="user.motherName" />
+    <input type="number" placeholder="Age" [(ngModel)]="user.age" />
+
+    <select [(ngModel)]="user.gender">
+      <option value="">Select Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+
+    <input type="text" placeholder="Phone Number" [(ngModel)]="user.mobileNumber" />
+    <input type="email" placeholder="Email" [(ngModel)]="user.email" />
+    <textarea placeholder="Address" [(ngModel)]="user.address"></textarea>
+
+    <input type="text" placeholder="Country" [(ngModel)]="user.country" />
+    <input type="text" placeholder="State" [(ngModel)]="user.state" />
+    <input type="text" placeholder="Mandal" [(ngModel)]="user.mandal" />
+    <input type="text" placeholder="Pincode" [(ngModel)]="user.pinCode" />
+
+    <input type="password" placeholder="Password" [(ngModel)]="user.password" />
+    <input type="password" placeholder="Confirm Password" [(ngModel)]="user.confirmPassword" />
+
+    <p class="text-danger" *ngIf="error">{{ error }}</p>
+    <p class="text-success" *ngIf="success">{{ success }}</p>
+
+    <button (click)="register()">Register</button>
+    <p>Already registered? <a routerLink="/">Login</a></p>
+  </div>
+</div>

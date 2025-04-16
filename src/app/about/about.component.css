@@ -1,0 +1,246 @@
+/* Hero Section Styling */
+.impactek-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: bgChange 24s infinite ease-in-out;
+}
+
+/* Dark Overlay */
+.impactek-overlay {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+/* Text Styling */
+.impactek-overlay h1 {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.impactek-overlay p {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Background Image Animation - High Quality Google Images */
+@keyframes bgChange {
+    0% {
+        background-image: url('https://cdn.pixabay.com/photo/2015/07/28/20/57/desert-864988_1280.jpg');
+    }
+    25% {
+        background-image: url('https://cdn.pixabay.com/photo/2023/05/18/16/25/boat-8002718_1280.jpg');
+    }
+    50% {
+        background-image: url('https://cdn.pixabay.com/photo/2017/09/04/16/58/passport-2714675_1280.jpg');
+    }
+    75% {
+        background-image: url('https://cdn.pixabay.com/photo/2020/09/17/05/12/river-5578051_1280.jpg');
+    }
+    100% {
+        background-image: url('https://cdn.pixabay.com/photo/2020/05/25/17/03/merry-christmas-5219496_1280.jpg');
+    }
+}
+
+
+/* secound section css */
+
+/* Section Styling */
+/* General Section Styling */
+.about-section {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.section-title span {
+    color: #ff7f27;
+}
+
+/* About Section Layout */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 25px; /* Add spacing between image and text */
+}
+
+.row-reverse {
+    flex-direction: column;
+}
+
+/* Image Styling */
+.about-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* Text Styling */
+.about-text {
+    max-width: 750px;
+    text-align: center;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px; /* Spacing between image and text on desktop */
+    }
+
+    .about-container.row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .about-image {
+        width: 48%;
+        height: 375px;
+    }
+
+    .about-text {
+        width: 48%;
+        text-align: left;
+        margin-left: 1.5%;
+    }
+}
+
+/* Image Backgrounds */
+.about5-img {
+    background-image: url(https://cdn.pixabay.com/photo/2018/09/04/16/48/taj-mahal-3654227_1280.jpg);
+}
+
+.about6-img {
+    background-image: url(https://cdn.pixabay.com/photo/2020/04/02/22/09/santorini-4996846_1280.jpg);
+}
+
+.about7-img {
+    background-image: url(https://cdn.pixabay.com/photo/2022/11/05/16/16/forbidden-city-7572222_1280.jpg);
+}
+
+.about8-img {
+    background-image: url(https://cdn.pixabay.com/photo/2022/06/30/21/39/paris-7294575_1280.jpg);
+}
+
+/* Heading and Text Enhancements */
+.about-text h4 {
+    font-size: 20px;
+    color: #004aad;
+    margin: 20px 0 10px;
+}
+
+.about-text ul {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.about-text ul li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.about-text p {
+    line-height: 1.6;
+    color: #444;
+}
+
+
+
+
+/* Best Tourist Destinations in India this is content style code */
+
+
+
+ /* General Section Styling */
+.new-section {
+    padding: 50px 20px;
+    background: #f4f8fb; /* Light Background Color */
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 30px;
+    color: #0b3d91;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Card Container */
+.mixers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Individual Card */
+.mixer-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.mixer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Card Heading */
+.mixer-card h3 {
+    font-size: 22px;
+    color: #ff6f00;
+    margin-bottom: 10px;
+}
+
+/* Card Paragraph */
+.mixer-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
